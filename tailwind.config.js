@@ -6,7 +6,8 @@ export default {
       colors: {
         'red_100': '#FF425E',
         'blue_100': '#162554',
-        'brand-2': '#1F59B0',
+        'brand-primary': '#2C3C98',
+        'brand-2': '#0671E0',
       },
 
     },
