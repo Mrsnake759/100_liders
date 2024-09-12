@@ -41,7 +41,9 @@
   gap: 100px;
 }
 
-
+h2 {
+  font-family: "Muller-bold", serif;
+}
 
 a,
 .green {
