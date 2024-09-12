@@ -2,12 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@font-face {
+  font-family: 'Muller';
+  src: url('fonts/Fontfabric - MullerRegular.otf') format('truetype'),
+  url('fonts/Fontfabric - MullerRegular.otf') format('truetype');
   font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Muller-medium';
+  src: url('fonts/Fontfabric - MullerMedium.otf') format('truetype'),
+  url('fonts/Fontfabric - MullerMedium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller-bold';
+  src: url('fonts/Fontfabric - MullerBold.otf') format('truetype'),
+  url('fonts/Fontfabric - MullerBold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#app {
+  /*max-width: 1280px;*/
+  /*margin: 0 16px;*/
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: normal;
+  /*height: 100vw;*/
+  font-family: "Muller", serif;
+  background-color: #162554;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+
 
 a,
 .green {
@@ -20,18 +53,5 @@ a,
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }
