@@ -4,6 +4,7 @@
   import TheDepartamentBlock from "@/components/TheDepartamentBlock.vue";
   import TheAlabugaBlock from "@/components/TheAlabugaBlock.vue";
   import TheEmptyBlock from "@/components/TheEmptyBlock.vue";
+  import TheCultureBlock from "@/components/TheCultureBlock.vue";
 
   export default {
     components: {
@@ -11,7 +12,8 @@
       TheReasonBlock,
       TheDepartamentBlock,
       TheAlabugaBlock,
-      TheEmptyBlock
+      TheEmptyBlock,
+      TheCultureBlock
     }
   }
 </script>
@@ -22,6 +24,7 @@
   <the-departament-block></the-departament-block>
   <the-alabuga-block></the-alabuga-block>
   <the-empty-block></the-empty-block>
+  <the-culture-block></the-culture-block>
 </template>
 
 <style scoped lang="scss">
