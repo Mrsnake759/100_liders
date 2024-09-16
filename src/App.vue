@@ -7,6 +7,7 @@
   import TheCultureBlock from "@/components/TheCultureBlock.vue";
   import TheGetBlock from "@/components/TheGetBlock.vue";
   import TheParticipantBlock from "@/components/TheParticipantBlock.vue";
+  import TheFormBlock from "@/components/TheFormBlock.vue";
   // import Card from "@/components/atoms/Card.vue";
 
   export default {
@@ -19,6 +20,7 @@
       TheCultureBlock,
       TheGetBlock,
       TheParticipantBlock,
+      TheFormBlock
       // Card
     }
   }
@@ -33,6 +35,7 @@
   <the-empty-block></the-empty-block>
   <the-culture-block></the-culture-block>
   <the-get-block></the-get-block>
+  <the-form-block></the-form-block>
 
 <!--  <card></card>-->
 </template>

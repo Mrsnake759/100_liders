@@ -1,11 +1,11 @@
 <template>
   <div class="program-schedule">
-    <h2>Расписание программ</h2>
+    <h2 class="title text-2xl">Расписание программ</h2>
     <div class="tabs">
       <span>Будущие</span>
       <span>Прошедшие</span>
     </div>
-    <swiper :modules="[Navigation]" :slides-per-view="1" :space-between="20" navigation pagination>
+    <swiper :slides-per-view="1.2" :space-between="20" centered-slides>
       <swiper-slide v-for="(program, index) in programs" :key="index" class="slide">
         <div class="program-info">
           <div class="program-header">
@@ -24,11 +24,11 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
-import { Navigation } from 'swiper/modules';
+// import { Navigation } from 'swiper/modules';
 
 export default {
   name: "TheParticipantBlock",
-  methods: {Navigation},
+  // methods: {Navigation},
   components: {
     Swiper,
     SwiperSlide,
@@ -72,17 +72,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.title {
+  font-family: "Muller-bold", serif;
+}
+
 .program-schedule {
   text-align: center;
   color: #fff;
-  background-color: #1a2b4c;
   padding: 20px;
 }
 
 .tabs {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
+  gap: 40px;
 }
 
 .tabs span {
@@ -92,9 +98,10 @@ export default {
 }
 
 .slide {
+  margin-top: 15px;
   background-color: #fff;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 40px;
+  padding: 40px 30px;
   color: #000;
 }
 
@@ -108,12 +115,14 @@ export default {
   background-color: #007bff;
   color: #fff;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 200px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
 .program-batch {
   font-weight: bold;
+
 }
 
 .program-title {
@@ -133,6 +142,6 @@ export default {
 }
 
 .program-description {
-  text-align: center;
+  text-align: start;
 }
 </style>
