@@ -9,6 +9,7 @@
   import TheParticipantBlock from "@/components/TheParticipantBlock.vue";
   import TheFormBlock from "@/components/TheFormBlock.vue";
   import TheProjectBlock from "@/components/TheProjectBlock.vue";
+  import TheSuccessBlock from "@/components/TheSuccessBlock.vue";
   // import Card from "@/components/atoms/Card.vue";
 
   export default {
@@ -22,7 +23,8 @@
       TheGetBlock,
       TheParticipantBlock,
       TheFormBlock,
-      TheProjectBlock
+      TheProjectBlock,
+      TheSuccessBlock
       // Card
     }
   }
@@ -37,6 +39,7 @@
   <the-empty-block></the-empty-block>
   <the-project-block></the-project-block>
   <the-culture-block></the-culture-block>
+  <the-success-block></the-success-block>
   <the-get-block></the-get-block>
   <the-form-block></the-form-block>
 
