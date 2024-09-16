@@ -6,6 +6,8 @@
   import TheEmptyBlock from "@/components/TheEmptyBlock.vue";
   import TheCultureBlock from "@/components/TheCultureBlock.vue";
   import TheGetBlock from "@/components/TheGetBlock.vue";
+  import TheParticipantBlock from "@/components/TheParticipantBlock.vue";
+  // import Card from "@/components/atoms/Card.vue";
 
   export default {
     components: {
@@ -15,7 +17,9 @@
       TheAlabugaBlock,
       TheEmptyBlock,
       TheCultureBlock,
-      TheGetBlock
+      TheGetBlock,
+      TheParticipantBlock,
+      // Card
     }
   }
 </script>
@@ -23,11 +27,14 @@
 <template>
   <the-main-block></the-main-block>
   <the-reason-block></the-reason-block>
+  <the-participant-block></the-participant-block>
   <the-departament-block></the-departament-block>
   <the-alabuga-block></the-alabuga-block>
   <the-empty-block></the-empty-block>
   <the-culture-block></the-culture-block>
   <the-get-block></the-get-block>
+
+<!--  <card></card>-->
 </template>
 
 <style scoped lang="scss">
