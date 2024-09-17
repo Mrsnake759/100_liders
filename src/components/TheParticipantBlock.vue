@@ -1,11 +1,11 @@
 <template>
-  <div class="program-schedule">
-    <h2 class="title text-2xl">Расписание программ</h2>
-    <div class="tabs">
-      <span>Будущие</span>
-      <span>Прошедшие</span>
-    </div>
-    <swiper :slides-per-view="1.2" :space-between="20" centered-slides>
+  <div class="program-schedule text-center">
+    <h2 class="title text-2xl md:text-5xl md:text-start mb-10">Расписание программ</h2>
+<!--    <div class="tabs">-->
+<!--      <span>Будущие</span>-->
+<!--      <span>Прошедшие</span>-->
+<!--    </div>-->
+    <swiper :slides-per-view="1.2" :space-between="20" :centered-slides="centeredSlides" :breakpoints="breakpoints">
       <swiper-slide v-for="(program, index) in programs" :key="index" class="slide">
         <div class="program-info">
           <div class="program-header">
@@ -24,11 +24,9 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
-// import { Navigation } from 'swiper/modules';
 
 export default {
   name: "TheParticipantBlock",
-  // methods: {Navigation},
   components: {
     Swiper,
     SwiperSlide,
@@ -64,21 +62,30 @@ export default {
           image: 'src/assets/slide1.png',
           description: 'Технические решения, которые повлияют на дальнейшую эксплуатацию, и реализация проекта в соответствии с политикой компании.'
         },
-        // Добавьте другие программы по аналогии
-      ]
+        // Add more programs as needed
+      ],
+      centeredSlides: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 1.5,
+          centeredSlides: false,
+        },
+        1280: {
+          slidesPerView: 2.5,
+          centeredSlides: false,
+        }
+      }
     };
   }
 };
 </script>
 
 <style scoped lang="scss">
-
 .title {
   font-family: "Muller-bold", serif;
 }
 
 .program-schedule {
-  text-align: center;
   color: #fff;
   padding: 20px;
 }
@@ -87,7 +94,6 @@ export default {
   margin-top: 25px;
   display: flex;
   justify-content: center;
-  //margin-bottom: 20px;
   gap: 40px;
 }
 
@@ -122,7 +128,6 @@ export default {
 
 .program-batch {
   font-weight: bold;
-
 }
 
 .program-title {

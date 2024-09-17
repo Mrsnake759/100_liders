@@ -10,6 +10,8 @@
   import TheFormBlock from "@/components/TheFormBlock.vue";
   import TheProjectBlock from "@/components/TheProjectBlock.vue";
   import TheSuccessBlock from "@/components/TheSuccessBlock.vue";
+  import TheAwaitsBlock from "@/components/TheAwaitsBlock.vue";
+  import TheReviewsBlock from "@/components/TheReviewsBlock.vue";
   // import Card from "@/components/atoms/Card.vue";
 
   export default {
@@ -24,7 +26,9 @@
       TheParticipantBlock,
       TheFormBlock,
       TheProjectBlock,
-      TheSuccessBlock
+      TheSuccessBlock,
+      TheAwaitsBlock,
+      TheReviewsBlock
       // Card
     }
   }
@@ -40,7 +44,10 @@
   <the-project-block></the-project-block>
   <the-culture-block></the-culture-block>
   <the-success-block></the-success-block>
+<!--  не доделанный блок-->
+  <the-awaits-block></the-awaits-block>
   <the-get-block></the-get-block>
+  <the-reviews-block></the-reviews-block>
   <the-form-block></the-form-block>
 
 <!--  <card></card>-->
